@@ -26,7 +26,7 @@ wait()
     local TeleportSection = Teleport:NewSection("Teleport")
 
     local Teleporter; --CREATE GLOBAL VARIABLE OF THE USERS SELECTION TO BE USED ANYWHERE
-    TeleportSection:NewDropdown("Select Island", "Click the number you want (Refers to how far down it is)", {"Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach",}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
+    TeleportSection:NewDropdown("Select Island", "Click the number you want (Refers to how far down it is)", {"Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach", "Mine",}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
         Teleporter = value; --STORES THE USERS SELECTION
     end)
 

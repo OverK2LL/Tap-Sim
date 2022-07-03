@@ -72,7 +72,7 @@ local Rebirth = Window:NewTab("Rebirths")
 local RebirthSection = Rebirth:NewSection("Rebirths")
 
 local Rebirths; --CREATE GLOBAL VARIABLE OF THE USERS SELECTION TO BE USED ANYWHERE
-    RebirthSection:NewDropdown("Select Rebirth", "Click the number you want (Refers to how far down it is)", {"1 Rebirths", "5 Rebirths", "10 Rebirths", "20 Rebirths", "100 Rebirths", "500 Rebirths", "2k Rebirths", "4.5k Rebirths", "8k Rebirths", "12.5k Rebirths", "18k Rebirths", "24.5k Rebirths", }, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
+    RebirthSection:NewDropdown("Select Rebirth", "Click the number you want (Refers to how far down it is)", {"1 Rebirths", "5 Rebirths", "10 Rebirths", "20 Rebirths", "100 Rebirths", "500 Rebirths", "2k Rebirths", "4.5k Rebirths", "8k Rebirths", "12.5k Rebirths", "18k Rebirths", "24.5k Rebirths", "32k Rebirths",}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
         Rebirths = value; --STORES THE USERS SELECTION
     end)
 
@@ -145,6 +145,12 @@ else if Rebirths == "24.5k Rebirths" then
     local Event = game:GetService("ReplicatedStorage").Events.Rebirth
     Event:FireServer(A_1)
     wait(1)
+    else if Rebirths == "32k Rebirths" then
+    local A_1 = 24500
+    local Event = game:GetService("ReplicatedStorage").Events.Rebirth
+    Event:FireServer(A_1)
+    wait(1)
+end
 end
 end
 end

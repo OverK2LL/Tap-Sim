@@ -26,7 +26,7 @@ wait()
     local TeleportSection = Teleport:NewSection("Teleport")
 
     local Teleporter; --CREATE GLOBAL VARIABLE OF THE USERS SELECTION TO BE USED ANYWHERE
-    TeleportSection:NewDropdown("Select Island", "Click the number you want (Refers to how far down it is)", {"Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach", "Mine",}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
+    TeleportSection:NewDropdown("Select Island", "Click the number you want (Refers to how far down it is)", {"Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach", "Mine", "Cloud"}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
         Teleporter = value; --STORES THE USERS SELECTION
     end)
 
@@ -57,6 +57,9 @@ wait()
 
     else if Teleporter == "Mine" then
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-244.641312, 6976.94482, -485.207672, 0.0140147498, -2.08244688e-09, 0.999901772, -1.29673641e-08, 1, 2.26440355e-09, -0.999901772, -1.2997825e-08, 0.0140147498)
+        else if Teleporter == "Cloud" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-304.975128, 11236.4062, -238.524765, 0.0133839706, -2.30151684e-08, 0.999910414, -8.56220765e-08, 1, 2.41632971e-08, -0.999910414, -8.59378062e-08, 0.0133839706)
+       end
     end
 end
 end
@@ -179,7 +182,7 @@ local Egg = Window:NewTab("Egg")
 local EggSection = Egg:NewSection("Egg")
 
 local Egg; --CREATE GLOBAL VARIABLE OF THE USERS SELECTION TO BE USED ANYWHERE
-    EggSection:NewDropdown("Select Egg", "Click the number you want (Refers to how far down it is)", {"Starter", "Wood", "Jungle", "Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach", "Dominus", "Mine", "2M Egg",}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
+    EggSection:NewDropdown("Select Egg", "Click the number you want (Refers to how far down it is)", {"Starter", "Wood", "Jungle", "Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach", "Dominus", "Mine", "Cloud", "2M Egg",}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
         Eggs = value; --STORES THE USERS SELECTION
     end)
 
@@ -322,7 +325,7 @@ else if Eggs == "2M Egg" then
     local Event = game:GetService("ReplicatedStorage").Events.HatchEgg
     Event:InvokeServer(A_1, A_2, A_3)
     wait(1)
-    else if Eggs == "Cloud Egg" then
+    else if Eggs == "Cloud" then
     local A_1 = 
     {
     }

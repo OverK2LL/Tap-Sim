@@ -9,12 +9,12 @@ if game.PlaceId == 9498006165 then
 
     MainSection:NewToggle("Auto Tap", "Taps", function(v)
         getgenv().autoswing = v
-        while autoswing and task.wait do
+        while true do
             if not getgenv().autoswing then return end
 
             local Event = game:GetService("ReplicatedStorage").Events.Tap
-            Event:InvokeServer()
-
+            Event:FireServer()
+            
 wait()
 
         end
@@ -26,7 +26,7 @@ wait()
     local TeleportSection = Teleport:NewSection("Teleport")
 
     local Teleporter; --CREATE GLOBAL VARIABLE OF THE USERS SELECTION TO BE USED ANYWHERE
-    TeleportSection:NewDropdown("Select Island", "Click the number you want (Refers to how far down it is)", {"Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach", "Mine", "Cloud"}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
+    TeleportSection:NewDropdown("Select Island", "Click the number you want (Refers to how far down it is)", {"Forest", "Flower", "Swamp", "Snow", "Desert", "Death", "Beach", "Mine", "Cloud", "Coral", "Darkheart",}, function(value)--THIS FUNCTION ALLOWS US TO STORE THE USERS SELECTION
         Teleporter = value; --STORES THE USERS SELECTION
     end)
 
@@ -59,8 +59,14 @@ wait()
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-244.641312, 6976.94482, -485.207672, 0.0140147498, -2.08244688e-09, 0.999901772, -1.29673641e-08, 1, 2.26440355e-09, -0.999901772, -1.2997825e-08, 0.0140147498)
         else if Teleporter == "Cloud" then
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-304.975128, 11236.4062, -238.524765, 0.0133839706, -2.30151684e-08, 0.999910414, -8.56220765e-08, 1, 2.41632971e-08, -0.999910414, -8.59378062e-08, 0.0133839706)
+        else if Teleporter == "Coral" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-511.994293, 13802.0225, -543.387085, 0.0159184374, 5.11358884e-08, -0.999873281, -1.04936495e-08, 1, 5.09753058e-08, 0.999873281, 9.68087299e-09, 0.0159184374)
+        else if Teleporter == "Darkheart" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-410.602417, 17170.082, -552.655334, 0.0240757596, -8.50726511e-09, 0.999710143, -4.85964584e-08, 1, 9.68006741e-09, -0.999710143, -4.88154264e-08, 0.0240757596)
        end
     end
+end
+end
 end
 end
 end

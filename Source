@@ -47,16 +47,16 @@ wait()
     else if Teleporter == "Snow" then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-242.325043, 2552.41528, -447.929382, 1, 0, 0, 0, 1, 0, 0, 0, 1)
     else if Teleporter == "Desert" then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-216.650024, 3373.46533, -739.679321, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-166.285004, 4225.6084, -779.153137, -2.50829615e-08, 2.47257077e-08, 1, 2.29512009e-09, 1, -2.47257077e-08, -1, 2.29511943e-09, -2.50829615e-08)
 
     else if Teleporter == "Death" then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-343.587402, 4409.60547, -483.879364, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-276.20105, 5415.50342, -480.28775, -8.61721219e-08, -6.60975203e-08, 1, -1.10628315e-08, 1, 6.60975203e-08, -1, -1.10628262e-08, -8.61721219e-08)
 
     else if Teleporter == "Beach" then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-180.137405, 5814.55566, -483.879364, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-135.823471, 6872.54443, -494.148041, -0.019288687, 7.12630879e-08, 0.999813974, 1.56080819e-08, 1, -7.09752328e-08, -0.999813974, 1.42361589e-08, -0.019288687)
 
     else if Teleporter == "Mine" then
-         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-244.641312, 6976.94482, -485.207672, 0.0140147498, -2.08244688e-09, 0.999901772, -1.29673641e-08, 1, 2.26440355e-09, -0.999901772, -1.2997825e-08, 0.0140147498)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-243.258621, 8366.14453, -483.889771, 6.09359631e-06, -9.98215732e-09, 1, 1.86060634e-09, 1, 9.98214578e-09, -1, 1.8605455e-09, 6.09359631e-06)
         else if Teleporter == "Cloud" then
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-304.975128, 11236.4062, -238.524765, 0.0133839706, -2.30151684e-08, 0.999910414, -8.56220765e-08, 1, 2.41632971e-08, -0.999910414, -8.59378062e-08, 0.0133839706)
         else if Teleporter == "Coral" then
